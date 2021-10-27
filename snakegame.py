@@ -90,7 +90,7 @@ class Snake(arcade.Sprite):
         
         elif food == "apple":
             self.score += 1
-            self.body.append(self.body[len(self.body)-1][0], self.body[len(self.body)-1[1]])
+            self.body.append([self.body[len(self.body)-1][0], self.body[len(self.body)-1][1]])
        
         elif food == "pear":
             self.body += 2
@@ -159,6 +159,6 @@ class Game(arcade.Window):
             self.snake =Thorn(width , height)
   
 
-
-game=Game()
-arcade.run()
+if __name__ == '__main__':
+    game=Game()
+    arcade.run()

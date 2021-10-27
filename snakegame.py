@@ -28,7 +28,7 @@ class Snake(arcade.Sprite):
         self.r= 8
         self.change_x = 0
         self.change_y = 0
-        self.score = 0
+        self.score = 1
         self.body =[]
         self.body.append([self.center_x, self.center_y])
 
